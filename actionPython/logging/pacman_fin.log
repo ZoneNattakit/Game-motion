@@ -1,0 +1,140 @@
+2023-11-14 17:01:14,844 | ERROR | writeLogs.py --> GameRenderer.restart_game() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 669, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 407, in tick
+    if self.check_collision_in_direction(self.direction_buffer)[0]:
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 358, in check_collision_in_direction
+    if in_direction == Direction.NONE: GameRenderer.restart_game()#return False, desired_position
+TypeError: GameRenderer.restart_game() missing 1 required positional argument: 'self'
+2023-11-14 17:11:34,794 | ERROR | writeLogs.py --> 'NoneType' object has no attribute 'set_position'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 636, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 139, in tick
+    self._handle_events()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 256, in _handle_events
+    self.restart_game()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 281, in restart_game
+    self._hero.set_position(unified_size, unified_size)
+AttributeError: 'NoneType' object has no attribute 'set_position'
+2023-11-15 11:51:46,100 | ERROR | writeLogs.py --> GameRenderer.restart_game() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 668, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 406, in tick
+    if self.check_collision_in_direction(self.direction_buffer)[0]:
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 367, in check_collision_in_direction
+    GameRenderer.restart_game()
+TypeError: GameRenderer.restart_game() missing 1 required positional argument: 'self'
+2023-11-15 11:57:06,975 | ERROR | writeLogs.py --> 'NoneType' object has no attribute 'mouth_open'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 678, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 142, in tick
+    self._handle_events()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 260, in _handle_events
+    self._hero.mouth_open = not self._hero.mouth_open
+AttributeError: 'NoneType' object has no attribute 'mouth_open'
+2023-11-15 14:14:50,177 | ERROR | writeLogs.py --> 'NoneType' object has no attribute 'mouth_open'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 678, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 142, in tick
+    self._handle_events()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 260, in _handle_events
+    self._hero.mouth_open = not self._hero.mouth_open
+AttributeError: 'NoneType' object has no attribute 'mouth_open'
+2023-11-15 14:15:54,412 | ERROR | writeLogs.py --> 'NoneType' object has no attribute 'mouth_open'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 679, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 142, in tick
+    self._handle_events()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 256, in _handle_events
+    self._hero.mouth_open = not self._hero.mouth_open
+AttributeError: 'NoneType' object has no attribute 'mouth_open'
+2023-11-16 10:20:05,432 | ERROR | writeLogs.py --> 'NoneType' object has no attribute 'mouth_open'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 678, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 142, in tick
+    self._handle_events()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 260, in _handle_events
+    self._hero.mouth_open = not self._hero.mouth_open
+AttributeError: 'NoneType' object has no attribute 'mouth_open'
+2023-11-16 16:02:47,817 | ERROR | writeLogs.py --> module 'keyboard' has no attribute 'clear_events'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 680, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 424, in tick
+    self.handle_ghosts()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 476, in handle_ghosts
+    self._renderer.kill_pacman()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 212, in kill_pacman
+    keyboard.clear_events()
+AttributeError: module 'keyboard' has no attribute 'clear_events'
+2023-11-16 16:03:57,509 | ERROR | writeLogs.py --> '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 680, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 424, in tick
+    self.handle_ghosts()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 476, in handle_ghosts
+    self._renderer.kill_pacman()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 212, in kill_pacman
+    keyboard.clear_all_hotkeys()
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keyboard\__init__.py", line 760, in unhook_all_hotkeys
+    _listener.blocking_hotkeys.clear()
+AttributeError: '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+2023-11-16 16:04:42,962 | ERROR | writeLogs.py --> '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 680, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 424, in tick
+    self.handle_ghosts()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 476, in handle_ghosts
+    self._renderer.kill_pacman()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 212, in kill_pacman
+    keyboard.clear_all_hotkeys()
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keyboard\__init__.py", line 760, in unhook_all_hotkeys
+    _listener.blocking_hotkeys.clear()
+AttributeError: '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+2023-11-16 16:05:05,314 | ERROR | writeLogs.py --> '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 680, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 424, in tick
+    self.handle_ghosts()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 476, in handle_ghosts
+    self._renderer.kill_pacman()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 212, in kill_pacman
+    keyboard.clear_all_hotkeys()
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keyboard\__init__.py", line 760, in unhook_all_hotkeys
+    _listener.blocking_hotkeys.clear()
+AttributeError: '_KeyboardListener' object has no attribute 'blocking_hotkeys'
+2023-11-16 16:06:08,792 | ERROR | writeLogs.py --> remove_hotkey() missing 1 required positional argument: 'hotkey_or_callback'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 680, in <module>
+    game_renderer.tick(120)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 126, in tick
+    game_object.tick()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 424, in tick
+    self.handle_ghosts()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 476, in handle_ghosts
+    self._renderer.kill_pacman()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\pacman_final.py", line 212, in kill_pacman
+    keyboard.clear_hotkey()
+TypeError: remove_hotkey() missing 1 required positional argument: 'hotkey_or_callback'

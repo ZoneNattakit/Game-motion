@@ -1,0 +1,1377 @@
+2023-11-06 16:07:28,508 | ERROR | writeLog.py --> name 'X' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Nattakit\Desktop\actionPython\actionhandMain.py", line 26, in <module>
+    main()
+  File "c:\Users\Nattakit\Desktop\actionPython\actionhandMain.py", line 20, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+NameError: name 'X' is not defined
+2023-11-07 11:00:06,791 | ERROR | writeLog.py --> local variable 'conv_model' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 32, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 20, in main
+    model_train.predict_and_res(conv_model, X_test, y_test)
+UnboundLocalError: local variable 'conv_model' referenced before assignment
+2023-11-07 11:01:49,669 | ERROR | writeLog.py --> local variable 'X_test' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 32, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 20, in main
+    model_train.predict_and_res(conv_model, X_test, y_test)
+UnboundLocalError: local variable 'X_test' referenced before assignment
+2023-11-07 11:07:15,116 | ERROR | writeLog.py --> modelCam.get_test_data() missing 1 required positional argument: 'test_data_y_path'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 33, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 20, in main
+    X_test, y_test = model_train.get_test_data()
+TypeError: modelCam.get_test_data() missing 1 required positional argument: 'test_data_y_path'
+2023-11-07 11:12:14,365 | ERROR | writeLog.py --> name 'X_test' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 35, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 20, in main
+    if X_test is not None and y_test is not None:
+NameError: name 'X_test' is not defined
+2023-11-07 11:17:31,393 | ERROR | writeLog.py --> modelCam.load_data() missing 3 required positional arguments: 'DATA_PATH', 'no_sequences', and 'sequence_length'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 37, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 19, in main
+    X_test, y_test = model_train.load_data()  # Replace with your method to obtain test data
+TypeError: modelCam.load_data() missing 3 required positional arguments: 'DATA_PATH', 'no_sequences', and 'sequence_length'
+2023-11-07 11:17:46,118 | ERROR | writeLog.py --> local variable 'DATA_PATH' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 37, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 19, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+UnboundLocalError: local variable 'DATA_PATH' referenced before assignment
+2023-11-07 11:18:00,808 | ERROR | writeLog.py --> local variable 'conv_model' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 26, in main
+    model_train.predict_and_res(conv_model, X_test, y_test)
+UnboundLocalError: local variable 'conv_model' referenced before assignment
+2023-11-07 11:18:56,601 | ERROR | writeLog.py --> 'modelCam' object has no attribute 'load_model'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 21, in main
+    conv_model = model_train.load_model(model_path)
+AttributeError: 'modelCam' object has no attribute 'load_model'
+2023-11-07 11:19:52,804 | ERROR | writeLog.py --> 'str' object has no attribute 'load_model'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 21, in main
+    conv_model = model_train.loading_model(model_path)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\modelHand.py", line 66, in loading_model
+    model.load_model('action.h5')
+AttributeError: 'str' object has no attribute 'load_model'
+2023-11-07 14:37:37,834 | ERROR | writeLog.py --> 'NoneType' object has no attribute 'predict'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\actionPython\modelHand.py", line 92, in predict_and_res
+    res = model.predict(input_sequence)[0]
+AttributeError: 'NoneType' object has no attribute 'predict'
+2023-11-08 09:43:26,633 | ERROR | writeLog.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 38, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 32, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+2023-11-08 09:43:40,188 | ERROR | writeLog.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 38, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 32, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+2023-11-08 09:44:12,506 | ERROR | writeLog.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 38, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 32, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+2023-11-08 09:45:05,206 | ERROR | writeLog.py --> local variable 'X' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 37, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 31, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+UnboundLocalError: local variable 'X' referenced before assignment
+2023-11-08 09:47:48,034 | ERROR | writeLog.py --> local variable 'DATA_PATH' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 39, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 31, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\videoCap.py", line 40, in collect_data
+    if len(DATA_PATH) == 0:
+UnboundLocalError: local variable 'DATA_PATH' referenced before assignment
+2023-11-08 09:48:24,576 | ERROR | writeLog.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 39, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+2023-11-08 09:49:02,790 | ERROR | writeLog.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 39, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\0\\0.npy'
+2023-11-08 09:49:30,837 | ERROR | writeLog.py --> [WinError 183] Cannot create a file when that file already exists: 'MP_Data(1)'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 39, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 31, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\videoCap.py", line 41, in collect_data
+    os.makedirs(os.path.join(DATA_PATH))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'MP_Data(1)'
+2023-11-08 09:50:01,696 | ERROR | writeLog.py --> type object 'videocaps' has no attribute 'get_actions'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 39, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 31, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\videoCap.py", line 43, in collect_data
+    actions = videocaps.get_actions(self=self)
+AttributeError: type object 'videocaps' has no attribute 'get_actions'
+2023-11-08 10:20:46,316 | ERROR | writeLogs.py --> cannot unpack non-iterable Sequential object
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 35, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+TypeError: cannot unpack non-iterable Sequential object
+2023-11-08 10:22:54,747 | ERROR | writeLogs.py --> cannot unpack non-iterable Sequential object
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+TypeError: cannot unpack non-iterable Sequential object
+2023-11-08 10:24:34,628 | ERROR | writeLogs.py --> cannot unpack non-iterable Sequential object
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 35, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+TypeError: cannot unpack non-iterable Sequential object
+2023-11-08 10:25:25,191 | ERROR | writeLogs.py --> cannot unpack non-iterable Sequential object
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 35, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+TypeError: cannot unpack non-iterable Sequential object
+2023-11-08 10:26:03,758 | ERROR | writeLogs.py --> cannot unpack non-iterable Sequential object
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 35, in main
+    conv_model, X_test, y_test = model_train.train_model(X, y, actions)
+TypeError: cannot unpack non-iterable Sequential object
+2023-11-08 10:27:15,638 | ERROR | writeLogs.py --> save_model() missing 1 required positional argument: 'filepath'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel(conv_model)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model('action.h5')
+TypeError: save_model() missing 1 required positional argument: 'filepath'
+2023-11-08 10:57:45,631 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel(conv_model)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model(self, 'action.h5')
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_api.py", line 167, in save_model
+    return legacy_sm_saving_lib.save_model(
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\legacy\saving_utils.py", line 351, in try_build_compiled_arguments
+    and model.outputs is not None
+AttributeError: 'modelCam' object has no attribute 'outputs'
+2023-11-08 10:58:37,935 | ERROR | writeLogs.py --> save_model() missing 1 required positional argument: 'filepath'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel('action.h5')
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model('action.h5')
+TypeError: save_model() missing 1 required positional argument: 'filepath'
+2023-11-08 10:59:28,148 | ERROR | writeLogs.py --> 'str' object has no attribute 'save_model'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel('action.h5')
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model.save_model('action.h5')
+AttributeError: 'str' object has no attribute 'save_model'
+2023-11-08 11:00:40,068 | ERROR | writeLogs.py --> save_model() missing 1 required positional argument: 'filepath'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel(conv_model)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model('action.h5')
+TypeError: save_model() missing 1 required positional argument: 'filepath'
+2023-11-08 11:02:52,008 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel(conv_model)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model(self, 'action.h5')
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_api.py", line 167, in save_model
+    return legacy_sm_saving_lib.save_model(
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\legacy\saving_utils.py", line 351, in try_build_compiled_arguments
+    and model.outputs is not None
+AttributeError: 'modelCam' object has no attribute 'outputs'
+2023-11-08 11:03:57,571 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'outputs'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    model_train.savemodel(conv_model)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 62, in savemodel
+    model = tf.keras.models.save_model(self, 'action.h5')
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_api.py", line 167, in save_model
+    return legacy_sm_saving_lib.save_model(
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\legacy\saving_utils.py", line 351, in try_build_compiled_arguments
+    and model.outputs is not None
+AttributeError: 'modelCam' object has no attribute 'outputs'
+2023-11-08 11:05:11,792 | ERROR | writeLogs.py --> 'str' object is not a mapping
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 75, in predict_and_res
+    model = self.loading_model('action.h5')
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 65, in loading_model
+    tf.keras.models.load_model(model, 'action.h5')
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\legacy\save.py", line 225, in load_model
+    custom_objects = {**custom_objects, **tlco, **gco}
+TypeError: 'str' object is not a mapping
+2023-11-08 11:06:28,857 | ERROR | writeLogs.py --> name 'vidCam' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+NameError: name 'vidCam' is not defined
+2023-11-08 11:07:04,441 | ERROR | writeLogs.py --> name 'vidCam' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+NameError: name 'vidCam' is not defined
+2023-11-08 11:09:11,787 | ERROR | writeLogs.py --> name 'vidCam' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+NameError: name 'vidCam' is not defined
+2023-11-08 11:10:30,641 | ERROR | writeLogs.py --> name 'vidCam' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+NameError: name 'vidCam' is not defined
+2023-11-08 11:10:50,242 | ERROR | writeLogs.py --> name 'vidCam' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+NameError: name 'vidCam' is not defined
+2023-11-08 11:15:14,138 | ERROR | writeLogs.py --> vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 86, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+TypeError: vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+2023-11-08 11:17:00,448 | ERROR | writeLogs.py --> vidCam.get_actions() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 21, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 19, in load_data
+    actions = vidCam.get_actions()
+TypeError: vidCam.get_actions() missing 1 required positional argument: 'self'
+2023-11-08 11:17:26,938 | ERROR | writeLogs.py --> vidCam.get_actions() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 21, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 19, in load_data
+    actions = vidCam.get_actions()
+TypeError: vidCam.get_actions() missing 1 required positional argument: 'self'
+2023-11-08 11:17:38,334 | ERROR | writeLogs.py --> 'function' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 21, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 20, in load_data
+    label_map = {label:num for num, label in enumerate(actions)}
+TypeError: 'function' object is not iterable
+2023-11-08 14:46:22,807 | ERROR | writeLogs.py --> vidCam.setMP() takes 0 positional arguments but 1 was given
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 12, in main
+    captureVid.setMP()
+TypeError: vidCam.setMP() takes 0 positional arguments but 1 was given
+2023-11-08 14:46:38,087 | ERROR | writeLogs.py --> drawLandmark.draw_grid() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 12, in main
+    captureVid.setMP()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 23, in setMP
+    landMark.draw_grid(image)
+TypeError: drawLandmark.draw_grid() takes 1 positional argument but 2 were given
+2023-11-08 14:47:16,740 | ERROR | writeLogs.py --> drawLandmark.draw_grid() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 12, in main
+    captureVid.setMP()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 23, in setMP
+    landMark.draw_grid(image)
+TypeError: drawLandmark.draw_grid() takes 1 positional argument but 2 were given
+2023-11-10 10:40:19,885 | ERROR | writeLogs.py --> module 'pyautogui' has no attribute 'getWindowList'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 111, in predict_and_res
+    google_chrome_window = self.get_window_with_title("Google Chrome")
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 69, in get_window_with_title
+    window_list = pyautogui.getWindowList()
+AttributeError: module 'pyautogui' has no attribute 'getWindowList'
+2023-11-10 10:41:41,974 | ERROR | writeLogs.py --> modelCam.get_window_with_title() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 111, in predict_and_res
+    google_chrome_window = self.get_window_with_title("Google Chrome")
+TypeError: modelCam.get_window_with_title() takes 1 positional argument but 2 were given
+2023-11-10 10:42:08,110 | ERROR | writeLogs.py --> GetWindow() takes exactly 2 arguments (1 given)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 111, in predict_and_res
+    google_chrome_window = self.get_window_with_title("Google Chrome")
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 72, in get_window_with_title
+    return win32gui.GetWindow(window_handle)
+TypeError: GetWindow() takes exactly 2 arguments (1 given)
+2023-11-10 10:50:58,061 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 107, in predict_and_res
+    window = pyautogui.getWindowsWithTitle(windows_title)[0]
+IndexError: list index out of range
+2023-11-10 10:51:17,936 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 107, in predict_and_res
+    window = pyautogui.getWindowsWithTitle(windows_title)[0]
+IndexError: list index out of range
+2023-11-10 10:54:00,517 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 107, in predict_and_res
+    window = pyautogui.getWindowsWithTitle(windows_title)[0]
+IndexError: list index out of range
+2023-11-10 10:54:31,965 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 107, in predict_and_res
+    window = pyautogui.getWindowsWithTitle(windows_title)[0]
+IndexError: list index out of range
+2023-11-10 11:04:30,617 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 107, in predict_and_res
+    window = pyautogui.getWindowsWithTitle(windows_title)[0]
+IndexError: list index out of range
+2023-11-10 14:01:59,042 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 106, in predict_and_res
+    pyautogui.getWindowsWithTitle(app_title)[0].activate()
+IndexError: list index out of range
+2023-11-10 14:02:23,194 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 106, in predict_and_res
+    pyautogui.getWindowsWithTitle(app_title)[0].activate()
+IndexError: list index out of range
+2023-11-10 17:10:49,777 | ERROR | writeLogs.py --> 'list' object has no attribute 'activate'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 93, in predict_and_res
+    pacman_window.activate()
+AttributeError: 'list' object has no attribute 'activate'
+2023-11-10 17:11:20,495 | ERROR | writeLogs.py --> 'Win32Window' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 40, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 24, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 96, in predict_and_res
+    pacman_window[0].activate()
+TypeError: 'Win32Window' object is not subscriptable
+2023-11-12 22:31:19,590 | ERROR | writeLogs.py --> 'Win32Window' object has no attribute '_ProgramName'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 124, in predict_and_res
+    pacman_window = [window for window in windows if window._ProgramName == app_process_name]
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 124, in <listcomp>
+    pacman_window = [window for window in windows if window._ProgramName == app_process_name]
+AttributeError: 'Win32Window' object has no attribute '_ProgramName'
+2023-11-12 23:27:43,789 | ERROR | writeLogs.py --> name 'press_key' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 125, in predict_and_res
+    press_key(LEFT_ARROW)
+NameError: name 'press_key' is not defined
+2023-11-14 10:06:49,882 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\restart\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 31, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\restart\\0\\0.npy'
+2023-11-14 14:01:48,447 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\up\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 32, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\up\\0\\0.npy'
+2023-11-14 14:02:11,706 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\up\\0\\0.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  # Replace with your method to obtain test data
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 32, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\up\\0\\0.npy'
+2023-11-14 14:02:52,516 | ERROR | writeLogs.py --> vidCam.get_actions() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 29, in main
+    actions = vidCam.get_actions()
+TypeError: vidCam.get_actions() missing 1 required positional argument: 'self'
+2023-11-14 14:03:25,565 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data(1)\\left\\6\\4.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 118, in collect_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data(1)\\left\\6\\4.npy'
+2023-11-14 14:59:40,443 | ERROR | writeLogs.py --> OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 157, in predict_and_res
+    cv2.imshow('OpenCV Feed', resized_image)
+cv2.error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2023-11-14 15:00:19,670 | ERROR | writeLogs.py --> OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 157, in predict_and_res
+    cv2.imshow('OpenCV Feed', resized_image)
+cv2.error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2023-11-14 15:00:49,346 | ERROR | writeLogs.py --> OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 157, in predict_and_res
+    cv2.imshow('OpenCV Feed', image)
+cv2.error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2023-11-14 15:02:03,150 | ERROR | writeLogs.py --> OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 157, in predict_and_res
+    cv2.imshow('OpenCV Feed', image)
+cv2.error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2023-11-14 15:03:22,846 | ERROR | writeLogs.py --> OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 158, in predict_and_res
+    cv2.imshow('OpenCV Feed', image)
+cv2.error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1272: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'
+
+2023-11-14 17:10:02,886 | ERROR | writeLogs.py --> 'numpy.ndarray' object has no attribute 'index'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 138, in predict_and_res
+    if 'restart' in sentence[-3:] and np.argmax(res) == actions.index('restart'):
+AttributeError: 'numpy.ndarray' object has no attribute 'index'
+2023-11-14 17:52:35,297 | ERROR | writeLogs.py --> name 'pacman_window' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 118, in predict_and_res
+    if pacman_window.isMinimized or not pacman_window.isActive:
+NameError: name 'pacman_window' is not defined
+2023-11-16 13:46:48,947 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data\\up\\6\\2.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 118, in collect_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data\\up\\6\\2.npy'
+2023-11-16 13:56:19,993 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data\\up\\0\\10.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    X, y = self.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 26, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data\\up\\0\\10.npy'
+2023-11-16 14:37:19,214 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 142, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-16 14:37:37,301 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 142, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-16 15:08:04,526 | ERROR | writeLogs.py --> GameRenderer.kill_pacman() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 152, in predict_and_res
+    if GameRenderer.kill_pacman() is not None:
+TypeError: GameRenderer.kill_pacman() missing 1 required positional argument: 'self'
+2023-11-16 15:08:34,036 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 159, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-16 15:09:10,172 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 159, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-16 15:11:52,208 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 159, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-16 17:34:39,302 | ERROR | writeLogs.py --> local variable 'previous_action' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 130, in predict_and_res
+    if not press and current_action != previous_action:
+UnboundLocalError: local variable 'previous_action' referenced before assignment
+2023-11-17 11:10:28,774 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'extract_keypoints'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 100, in predict_and_res
+    keypoints = self.extract_keypoints(results)
+AttributeError: 'modelCam' object has no attribute 'extract_keypoints'
+2023-11-17 11:10:53,827 | ERROR | writeLogs.py --> vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 100, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+TypeError: vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+2023-11-17 11:11:26,277 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'release_key'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 113, in predict_and_res
+    self.release_key(self.get_keycode(actions[last_pressed_index]))
+AttributeError: 'modelCam' object has no attribute 'release_key'
+2023-11-17 13:38:36,773 | ERROR | writeLogs.py --> list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 145, in predict_and_res
+    if actions[np.argmax(res)] != sentence[-2]:
+IndexError: list index out of range
+2023-11-17 16:28:49,954 | ERROR | writeLogs.py --> Cannot load file containing pickled data when allow_pickle=False
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 35, in main
+    X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 25, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.jpg".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 462, in load
+    raise ValueError("Cannot load file containing pickled data "
+ValueError: Cannot load file containing pickled data when allow_pickle=False
+2023-11-17 16:35:29,428 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1377, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1360, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1349, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1126, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 10, 126), found shape=(None, 10, 480, 640, 3)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 52, in train_model
+    history = model.fit(X_train, y_train, epochs=1000, batch_size=32)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_filea99p8e8l.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1377, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1360, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1349, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1126, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 10, 126), found shape=(None, 10, 480, 640, 3)
+
+2023-11-17 16:36:19,262 | ERROR | writeLogs.py --> Input 0 of layer "max_pooling1d" is incompatible with the layer: expected ndim=3, found ndim=5. Full shape received: (None, 10, 480, 638, 256)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    model.add(MaxPooling1D(pool_size=2))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\tensorflow\python\trackable\base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "max_pooling1d" is incompatible with the layer: expected ndim=3, found ndim=5. Full shape received: (None, 10, 480, 638, 256)
+2023-11-17 16:38:24,184 | ERROR | writeLogs.py --> Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 478, 638, 256)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\tensorflow\python\trackable\base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 478, 638, 256)
+2023-11-17 16:39:15,222 | ERROR | writeLogs.py --> Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 478, 638, 256)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\tensorflow\python\trackable\base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 478, 638, 256)
+2023-11-17 16:39:42,154 | ERROR | writeLogs.py --> Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 476, 636, 256)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\tensorflow\python\trackable\base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 476, 636, 256)
+2023-11-17 16:40:09,753 | ERROR | writeLogs.py --> Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 474, 634, 256)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 44, in train_model
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\tensorflow\python\trackable\base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "max_pooling2d" is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: (None, 10, 474, 634, 256)
+2023-11-19 16:08:33,646 | ERROR | writeLogs.py --> Cannot load file containing pickled data when allow_pickle=False
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 25, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.jpg".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 462, in load
+    raise ValueError("Cannot load file containing pickled data "
+ValueError: Cannot load file containing pickled data when allow_pickle=False
+2023-11-19 16:09:28,739 | ERROR | writeLogs.py --> Cannot load file containing pickled data when allow_pickle=False
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 25, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.jpg".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 462, in load
+    raise ValueError("Cannot load file containing pickled data "
+ValueError: Cannot load file containing pickled data when allow_pickle=False
+2023-11-19 16:10:04,124 | ERROR | writeLogs.py --> Cannot load file containing pickled data when allow_pickle=False
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 25, in load_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.jpg".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 462, in load
+    raise ValueError("Cannot load file containing pickled data "
+ValueError: Cannot load file containing pickled data when allow_pickle=False
+2023-11-19 16:14:20,082 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 128, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_filefgha6dtk.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+
+2023-11-19 16:16:57,984 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 128, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_filebd4u08c3.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+
+2023-11-19 16:17:11,782 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 128, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_filey71ie9yn.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+
+2023-11-19 16:27:43,899 | ERROR | writeLogs.py --> argument 1 must be sequence of length 2, not 3
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 22, in main
+    X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 47, in load_data
+    img = img.resize((128, 128, 3))  # Resize the image to match the model's input size
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 2174, in resize
+    return self._new(self.im.resize(size, resample, box))
+TypeError: argument 1 must be sequence of length 2, not 3
+2023-11-19 16:28:13,939 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'predict_and_res'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+AttributeError: 'modelCam' object has no attribute 'predict_and_res'
+2023-11-19 16:28:42,831 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'mediapipe_detection'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 201, in predict_and_res
+    image, results = self.mediapipe_detection(frame, holistic)
+AttributeError: 'modelCam' object has no attribute 'mediapipe_detection'
+2023-11-19 16:29:30,564 | ERROR | writeLogs.py --> vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 202, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+TypeError: vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+2023-11-19 16:29:48,124 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 208, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_file7z37umjc.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+
+2023-11-19 21:30:47,282 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 49152)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 208, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_filezg6979wv.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 49152)
+
+2023-11-19 21:34:44,908 | ERROR | writeLogs.py --> cannot reshape array of size 126 into shape (1,128,128,3)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 202, in predict_and_res
+    keypoints = vidCam.extract_keypoints(self, results)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 51, in extract_keypoints
+    keypoints = np.concatenate([lh, rh]).reshape((1, 128, 128, 3))
+ValueError: cannot reshape array of size 126 into shape (1,128,128,3)
+2023-11-19 21:35:02,611 | ERROR | writeLogs.py --> cannot reshape array of size 126 into shape (128,128,3)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 202, in predict_and_res
+    keypoints = vidCam.extract_keypoints(self, results)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 51, in extract_keypoints
+    keypoints = np.concatenate([lh, rh]).reshape((128, 128, 3))
+ValueError: cannot reshape array of size 126 into shape (128,128,3)
+2023-11-19 21:36:03,268 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 208, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_file1j1_isrk.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 126)
+
+2023-11-19 21:40:13,952 | ERROR | writeLogs.py --> index 46065 is out of bounds for axis 0 with size 4
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 210, in predict_and_res
+    current_action = actions[np.argmax(res)]
+IndexError: index 46065 is out of bounds for axis 0 with size 4
+2023-11-19 21:46:13,273 | ERROR | writeLogs.py --> 'Sequential' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 196, in predict_and_res
+    print(model.shape)
+AttributeError: 'Sequential' object has no attribute 'shape'
+2023-11-20 09:15:09,370 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1377, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1360, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1349, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1126, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 128, 128, 3)
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 36, in main
+    conv_model = model_train.train_model(X, y, actions)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 101, in train_model
+    history = model.fit(X_train, y_train, epochs=1000, batch_size=32)
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_file4tw4vdwq.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1377, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1360, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1349, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 1126, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 128, 128, 3), found shape=(None, 10, 128, 128, 3)
+
+2023-11-20 16:13:15,071 | ERROR | writeLogs.py --> local variable 'last_action' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 111, in predict_and_res
+    if predicted_action != last_action:
+UnboundLocalError: local variable 'last_action' referenced before assignment
+2023-11-21 10:02:03,843 | ERROR | writeLogs.py --> 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 135, in predict_and_res
+    if res[np.argmax(res)] > threshold:
+TypeError: 'bool' object is not subscriptable
+2023-11-21 10:02:34,156 | ERROR | writeLogs.py --> 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 135, in predict_and_res
+    if res[np.argmax(res)] > threshold:
+TypeError: 'bool' object is not subscriptable
+2023-11-21 10:02:49,015 | ERROR | writeLogs.py --> 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 135, in predict_and_res
+    if res[np.argmax(res)] > threshold:
+TypeError: 'bool' object is not subscriptable
+2023-11-21 11:22:23,970 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 134, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
