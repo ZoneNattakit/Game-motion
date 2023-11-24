@@ -1432,3 +1432,66 @@ ValueError: in user code:
 
     ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 30, 126), found shape=(None, 10, 126)
 
+2023-11-24 11:32:34,710 | ERROR | writeLogs.py --> type object 'SolutionOutputs' has no attribute 'hand_landmarks'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 103, in predict_and_res
+    if results.hand_landmarks:
+AttributeError: type object 'SolutionOutputs' has no attribute 'hand_landmarks'
+2023-11-24 11:35:38,291 | ERROR | writeLogs.py --> type object 'SolutionOutputs' has no attribute 'multi_hand_landmarks'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 103, in predict_and_res
+    if not results.multi_hand_landmarks:
+AttributeError: type object 'SolutionOutputs' has no attribute 'multi_hand_landmarks'
+2023-11-24 11:37:10,797 | ERROR | writeLogs.py --> type object 'SolutionOutputs' has no attribute 'multi_hand_landmarks'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 103, in predict_and_res
+    if not results.multi_hand_landmarks:
+AttributeError: type object 'SolutionOutputs' has no attribute 'multi_hand_landmarks'
+2023-11-24 11:37:56,330 | ERROR | writeLogs.py --> type object 'SolutionOutputs' has no attribute 'landmark_list'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 103, in predict_and_res
+    if not results.landmark_list:
+AttributeError: type object 'SolutionOutputs' has no attribute 'landmark_list'
+2023-11-24 11:40:21,379 | ERROR | writeLogs.py --> module 'mediapipe' has no attribute 'holistic'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 80, in predict_and_res
+    with mp.holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
+AttributeError: module 'mediapipe' has no attribute 'holistic'
+2023-11-24 11:40:53,415 | ERROR | writeLogs.py --> 'modelCam' object has no attribute 'mediapipe_detection'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 98, in predict_and_res
+    image, results = self.mediapipe_detection(frame, holistic)
+AttributeError: 'modelCam' object has no attribute 'mediapipe_detection'
+2023-11-24 11:42:54,660 | ERROR | writeLogs.py --> vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 102, in predict_and_res
+    keypoints = vidCam.extract_keypoints(results)
+TypeError: vidCam.extract_keypoints() missing 1 required positional argument: 'results'

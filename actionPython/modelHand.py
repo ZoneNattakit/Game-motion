@@ -78,7 +78,7 @@ class modelCam:
 
         cap = cv2.VideoCapture(0)
         with landMark.mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
-            
+
             model = self.loading_model('action.h5')
             sequence = []
             sentence = []
@@ -87,66 +87,100 @@ class modelCam:
             res = [0.7, 0.2, 0.1]
             last_action = None  # Variable to store the last predicted action
             prediction_enabled = True  # Toggle for checking predictions
+            hand_detected = False  # Flag to track hand detection
 
             LEFT_ARROW = 0x25
             UP_ARROW = 0x26
             RIGHT_ARROW = 0x27
             DOWN_ARROW = 0x28
+            last_update_time = time.time()  # Initialize last update time
 
             while cap.isOpened():
-                res, frame = cap.read()     
+                res, frame = cap.read()
                 image, results = landMark.mediapipe_detection(frame, holistic)
 
-                keypoints = vidCam.extract_keypoints(self, results)
-                sequence.append(keypoints)
-                sequence = sequence[-30:]
+                # Check if hands are detected
+                if hand_detected == False:
+                    keypoints = vidCam.extract_keypoints(self, results)
+                    sequence.append(keypoints)
+                    sequence = sequence[-30:]
 
-                if len(sequence) == 30 and prediction_enabled:
-                    input_sequence = np.expand_dims(sequence, axis=0)
-                    res = model.predict(input_sequence)[0]
+                    # Hand is detected
+                    hand_detected = True
 
-                    predicted_action = actions[np.argmax(res)]
+                    if len(sequence) == 30 and prediction_enabled:
+                        input_sequence = np.expand_dims(sequence, axis=0)
+                        res = model.predict(input_sequence)[0]
 
-                    # Check if the predicted action is different from the last action
-                    if predicted_action != last_action:
-                        if predicted_action == 'left':
-                            self.press_key(LEFT_ARROW)
-                            last_action = 'left'
-                            print(predicted_action)
+                        predicted_action = actions[np.argmax(res)]
 
-                        elif predicted_action == 'right':
-                            self.press_key(RIGHT_ARROW)
-                            last_action = 'right'
-                            print(predicted_action)
+                        # Check if the predicted action is different from the last action
+                        if predicted_action != last_action:
+                            if predicted_action == 'left':
+                                self.press_key(LEFT_ARROW)
+                                last_action = 'left'
+                                print(predicted_action)
 
-                        elif predicted_action == 'up':
-                            self.press_key(UP_ARROW)
-                            last_action = 'up'
-                            print(predicted_action)
+                            elif predicted_action == 'right':
+                                self.press_key(RIGHT_ARROW)
+                                last_action = 'right'
+                                print(predicted_action)
 
-                        elif predicted_action == 'down':
-                            self.press_key(DOWN_ARROW)
-                            last_action = 'down'
-                            print(predicted_action)
+                            elif predicted_action == 'up':
+                                self.press_key(UP_ARROW)
+                                last_action = 'up'
+                                print(predicted_action)
 
-                    predictions.append(np.argmax(res))
+                            elif predicted_action == 'down':
+                                self.press_key(DOWN_ARROW)
+                                last_action = 'down'
+                                print(predicted_action)
 
-                    if np.unique(predictions[-1:])[0] == np.argmax(res):
-                        if res[np.argmax(res)] > threshold:
-                            if len(sentence) > 0:
-                                if actions[np.argmax(res)] != sentence[-1]:
+                        predictions.append(np.argmax(res))
+
+                        if np.unique(predictions[-1:])[0] == np.argmax(res):
+                            if res[np.argmax(res)] > threshold:
+                                if len(sentence) > 0:
+                                    if actions[np.argmax(res)] != sentence[-1]:
+                                        sentence.append(actions[np.argmax(res)])
+                                else:
                                     sentence.append(actions[np.argmax(res)])
+
+                        if hand_detected:
+                            current_time = time.time()
+
+                            # Display the message for 1 second
+                            if current_time - last_update_time < 1:
+                                resized_image = cv2.resize(image, (320, 240))
+                                cv2.rectangle(resized_image, (0, 0), (320, 40), (245, 117, 16), -1)
+                                cv2.putText(resized_image, ' '.join(sentence), (3, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,
+                                            cv2.LINE_AA)
+
+                                cv2.imshow('OpenCV Feed', resized_image)
                             else:
-                                sentence.append(actions[np.argmax(res)])
+                                # Clear the sentence after 1 second
+                                sentence = []
+                                last_update_time = current_time
 
-                    if len(sentence) > 1:
-                        sentence = sentence[-1:]
+                    else:
+                        # No hand detected, reset message and flag
+                        hand_detected = False
+                        sentence = []
 
-                resized_image = cv2.resize(image, (320, 240))
-                cv2.rectangle(resized_image, (0, 0), (320, 40), (245, 117, 16), -1)
-                cv2.putText(resized_image, ' '.join(sentence), (3, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
-                cv2.imshow('OpenCV Feed', resized_image)
+                else:
+                    # No hand detected, reset message and flag
+                    hand_detected = False
+                    sentence = []
+
+                # Display message only if hand is detected
+                if hand_detected:
+                    resized_image = cv2.resize(image, (320, 240))
+                    cv2.rectangle(resized_image, (0, 0), (320, 40), (245, 117, 16), -1)
+                    cv2.putText(resized_image, ' '.join(sentence), (3, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,
+                                cv2.LINE_AA)
+
+                    cv2.imshow('OpenCV Feed', resized_image)
 
                 key = cv2.waitKey(10)
                 if key & 0xFF == ord('q'):
@@ -156,6 +190,3 @@ class modelCam:
 
             cap.release()
             cv2.destroyAllWindows()
-
-
-
