@@ -87,7 +87,7 @@ class modelCam:
             last_action = None
             prediction_enabled = True
             hand_detected = False
-            sentence = None  # Initialize sentence to None
+            # sentence = None  # Initialize sentence to None
             display_time = 0  # Variable to store the time when the message is displayed
             display_duration = 1  # Time duration to display the message in seconds
 
@@ -96,7 +96,7 @@ class modelCam:
             RIGHT_ARROW = 0x27
             DOWN_ARROW = 0x28
 
-            with ThreadPoolExecutor() as executor:
+            with ThreadPoolExecutor(max_workers=4) as executor:
                 while cap.isOpened():
                     current_time = time.time()
 
@@ -157,11 +157,11 @@ class modelCam:
 
                     else:
                         hand_detected = False
-                        sentence = None  # Clear the message when no hand is detected
+                        sentence = []  # Clear the message when no hand is detected
 
                     if hand_detected:
-                        resized_image = cv2.resize(image, (320, 240))
-                        cv2.rectangle(resized_image, (0, 0), (320, 40), (245, 117, 16), -1)
+                        resized_image = cv2.resize(image, (640, 480))
+                        cv2.rectangle(resized_image, (0, 0), (640, 40), (245, 117, 16), -1)
 
                         # Display message only if less than 1 second has passed since the last action
                         if current_time - display_time < display_duration and sentence is not None:

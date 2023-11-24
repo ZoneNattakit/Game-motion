@@ -1513,3 +1513,30 @@ Traceback (most recent call last):
   File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 108, in predict_and_res
     keypoints = extract_keypoints(self, results)
 NameError: name 'extract_keypoints' is not defined
+2023-11-24 14:52:41,862 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 145, in predict_and_res
+    if np.unique(predictions[-1:])[0] == np.argmax(res):
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2023-11-24 16:03:13,169 | ERROR | writeLogs.py --> object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 160, in predict_and_res
+    if len(sentence) > 1:
+TypeError: object of type 'NoneType' has no len()
+2023-11-24 16:04:06,484 | ERROR | writeLogs.py --> object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 155, in predict_and_res
+    if len(sentence) > 1:
+TypeError: object of type 'NoneType' has no len()
