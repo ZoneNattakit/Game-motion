@@ -11,7 +11,7 @@ Logger = LoggingFunction('actionhandMain')
 
 def main():
 
-    model_path = "C:/Users/Nattakit/Desktop/imfg.takumi.api/PrototypeCode/actionPython/action.h5"
+    model_path = "action.h5"
     if os.path.isfile(model_path):
         actions = captureVid.get_actions()
         DATA_PATH = "MP_Data"
