@@ -1495,3 +1495,21 @@ Traceback (most recent call last):
   File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 102, in predict_and_res
     keypoints = vidCam.extract_keypoints(results)
 TypeError: vidCam.extract_keypoints() missing 1 required positional argument: 'results'
+2023-11-24 12:14:01,605 | ERROR | writeLogs.py --> local variable 'resized_image' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 175, in predict_and_res
+    cv2.imshow('OpenCV Feed', resized_image)
+UnboundLocalError: local variable 'resized_image' referenced before assignment
+2023-11-24 13:26:13,422 | ERROR | writeLogs.py --> name 'extract_keypoints' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\actionhandMain.py", line 25, in main
+    model_train.predict_and_res(X_test, y_test)
+  File "C:\Users\Nattakit\Desktop\Game-motion\actionPython\modelHand.py", line 108, in predict_and_res
+    keypoints = extract_keypoints(self, results)
+NameError: name 'extract_keypoints' is not defined
