@@ -50,10 +50,10 @@ class vidCam():
         actions = self.get_actions()
 
     # Thirty videos worth of data
-        no_sequences = 10
+        no_sequences = 30
 
     # Videos are going to be 30 frames in length
-        sequence_length = 10
+        sequence_length = 30
 
         for action in actions: 
             for sequence in range(no_sequences):
@@ -89,7 +89,7 @@ class vidCam():
                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
                                 # Show to screen
                                 cv2.imshow('OpenCV Feed', image)
-                                cv2.waitKey(500)
+                                # cv2.waitKey(500)
                             else: 
                                 cv2.putText(image, 'Collecting frames for {} Video Number {}'.format(action, sequence), (15,12), 
                                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)

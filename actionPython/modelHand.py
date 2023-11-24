@@ -37,8 +37,8 @@ class modelCam:
         print(type(actions))
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.05)
         DATA_PATH = 'MP_Data'
-        no_sequences = 10
-        sequence_length = 10
+        no_sequences = 30
+        sequence_length = 30
         
         X, y = self.load_data(DATA_PATH, no_sequences, sequence_length)
 
@@ -99,9 +99,9 @@ class modelCam:
 
                 keypoints = vidCam.extract_keypoints(self, results)
                 sequence.append(keypoints)
-                sequence = sequence[-10:]
+                sequence = sequence[-30:]
 
-                if len(sequence) == 10 and prediction_enabled:
+                if len(sequence) == 30 and prediction_enabled:
                     input_sequence = np.expand_dims(sequence, axis=0)
                     res = model.predict(input_sequence)[0]
 

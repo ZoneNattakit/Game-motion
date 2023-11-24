@@ -15,8 +15,8 @@ def main():
     if os.path.isfile(model_path):
         actions = captureVid.get_actions()
         DATA_PATH = "MP_Data"
-        no_sequences = 10
-        sequence_length = 10
+        no_sequences = 30
+        sequence_length = 30
     
         # Load test data
         X_test, y_test = model_train.load_data(DATA_PATH, no_sequences, sequence_length)  
@@ -28,8 +28,8 @@ def main():
     else:       
         actions = vidCam.get_actions
         DATA_PATH = "MP_Data"
-        no_sequences = 10
-        sequence_length = 10
+        no_sequences = 30
+        sequence_length = 30
         captureVid.collect_data()
 
         X, y = model_train.load_data(DATA_PATH, no_sequences, sequence_length)

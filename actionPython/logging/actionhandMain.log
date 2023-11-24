@@ -1366,12 +1366,69 @@ Traceback (most recent call last):
   File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 135, in predict_and_res
     if res[np.argmax(res)] > threshold:
 TypeError: 'bool' object is not subscriptable
-2023-11-21 11:22:23,970 | ERROR | writeLogs.py --> index 0 is out of bounds for axis 0 with size 0
+2023-11-24 10:38:33,028 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data\\up\\0\\45.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 118, in collect_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data\\up\\0\\45.npy'
+2023-11-24 10:41:21,637 | ERROR | writeLogs.py --> [Errno 2] No such file or directory: 'MP_Data\\up\\0\\36.npy'
+Traceback (most recent call last):
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
+    main()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 33, in main
+    captureVid.collect_data()
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\cam.py", line 118, in collect_data
+    res = np.load(os.path.join(DATA_PATH, action, str(sequence), "{}.npy".format(frame_num)))
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'MP_Data\\up\\0\\36.npy'
+2023-11-24 10:48:48,728 | ERROR | writeLogs.py --> in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 30, 126), found shape=(None, 10, 126)
 Traceback (most recent call last):
   File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 41, in <module>
     main()
   File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\actionhandMain.py", line 25, in main
     model_train.predict_and_res(X_test, y_test)
-  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 134, in predict_and_res
-    if np.unique(predictions[-1:])[0] == np.argmax(res):
-IndexError: index 0 is out of bounds for axis 0 with size 0
+  File "C:\Users\Nattakit\Desktop\imfg.takumi.api\PrototypeCode\actionPython\modelHand.py", line 106, in predict_and_res
+    res = model.predict(input_sequence)[0]
+  File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Nattakit\AppData\Local\Temp\__autograph_generated_file88jsexv5.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\Nattakit\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 30, 126), found shape=(None, 10, 126)
+
