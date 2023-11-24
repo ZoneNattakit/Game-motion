@@ -116,8 +116,8 @@ class modelCam:
 
                             predicted_action = actions[np.argmax(res)]
 
-                            if predicted_action != last_action:
-                                sentence = None  # Clear the message when the action changes
+                            if predicted_action != last_action and hand_detected == True:
+                                sentence = []   # Clear the message when the action changes
                                 display_time = current_time  # Update the display time
 
                                 if predicted_action == 'left':
